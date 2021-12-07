@@ -1,0 +1,18 @@
+
+.banner{
+    text-align: center;
+    font-size: 72px;
+    color: green;
+}
+
+.promotions{
+    text-align: center;
+    font-size: 72px;
+    color: yellow;
+}
+
+.footer{
+    text-align: center;
+    font-size: 72px;
+    color: orange;
+}

@@ -1,0 +1,13 @@
+.banner{
+    background-color: lightcoral;
+    padding: 150px 50px 150px 50px;
+    margin: 10px 10px 10px 10px;
+    /* background-image: url('https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); */
+}
+
+.about-paradise{
+    padding: 150px 50px 150px 50px;
+    margin: 10px 150px 10px 150px;
+    background-repeat: no-repeat;
+    background-image: url('https://www.megahubhk.com/wp-content/uploads/2015/07/Final-Company-Background-Image.jpg');
+}
