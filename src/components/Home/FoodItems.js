@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './CSS/FoodItems.css'
 
 
 function FoodItems() {
@@ -23,17 +24,56 @@ function FoodItems() {
       name: "Item3",
       picture: "Picture3",
       price: 1200
+    },
+    {
+      id: 4,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
+    },
+    {
+      id: 5,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
+    },
+    {
+      id: 6,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
+    },
+    {
+      id: 7,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
+    },
+    {
+      id: 8,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
+    },
+    {
+      id: 9,
+      name: "Item3",
+      picture: "Picture3",
+      price: 1200
     }
   ])
 
   const foodItemsList = items.map(x => 
-     <div className="Food-Items-List" key={x.id} id={x.id}>
-        <img src={image_url} alt="something" height="137px" width="137px"/>
-        {x.name}
-        <button>Add to Cart</button>
+     <div className="Food-Items-List" key={x.id}>
+        <img id="food-img" src={image_url} alt="something"/>
+        <div className="text-container">
+          <p id="item-name">Name : {x.name}</p>
+          <p id="item-price">Price : {x.price}</p>
+          <button id="add-to-cart">Add to Cart</button>
+        </div>        
      </div>)
   return (
-    <div>
+    <div className="food-items-container">
       {foodItemsList}
     </div>
   )
