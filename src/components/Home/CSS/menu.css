@@ -15,7 +15,6 @@
 }
 
 .menu-list{
-  background-color: none;
   position: absolute;
   flex-wrap: wrap;
   /* border-style: double; */

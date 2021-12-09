@@ -15,15 +15,10 @@
   margin-right: 10px;
 }
 
-/* .Food-Items-List:first-child{
-  margin-left: 10px;
-  margin-right: 10px;
+#food-img{
+  height: 200px;
+  width: 200px;
 }
-
-.Food-Items-List:last-child{
-  margin-right: 10px;
-  margin-left: 10px;
-} */
 
 .Food-Items-List:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
