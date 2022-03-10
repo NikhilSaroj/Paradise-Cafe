@@ -9,7 +9,6 @@ import CakesAndDesert from './CakesAndDesert'
 import CoffeAndBeverages from './CoffeAndBeverages'
 import Footer from './Footer'
 import FoodItems from './FoodItems'
-import Header from './Header'
 
 function Menu(props) {
 
