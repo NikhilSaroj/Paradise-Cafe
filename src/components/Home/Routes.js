@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Home from './Home'
 import Menu from './Menu'
 import AboutCafe from './AboutCafe'
+import ContactUs from './ContactUs'
 import Promotions from './Promotions'
 
 
@@ -15,6 +16,7 @@ function Routes() {
                <Route exact path="/" component={Home}/>
                <Route exact path="/Menu" component={Menu}/>
                <Route exact path="/AboutCafe" component={AboutCafe}/>
+               <Route exact path="/ContactUs" component={ContactUs}/>
                <Route exact path="/Promotions" component={Promotions}/>
             </Switch>
             </Router>

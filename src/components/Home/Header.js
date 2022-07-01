@@ -17,6 +17,16 @@ function Header(props) {
 		history.push("/");
 	}
 
+	const routeToAboutCafePage = () => {
+		// console.log('heelo')
+		history.push("/AboutCafe");
+	}
+
+	const routeToAboutContactUs = () => {
+		// console.log('heelo')
+		history.push("/ContactUs");
+	}
+
 	return (
 		<div className="header">
 			{/* <img className="cafe-logo" src={Logo} alt={"Cafe Logo"}/> */}
@@ -26,8 +36,9 @@ function Header(props) {
 			<p className="header">Welcome to paradise cafe</p>
 			<div className="opt-buttons">
 				<button id="our_menu" onClick={routeToMenuPage}>Our Menu</button>
-				<button id="our_story" onClick={() => props.ourStory()}>Our Story</button>
-				<button id="contact_us">Contact US</button>
+				{/* <button id="our_story" onClick={() => props.ourStory()}>Our Story</button> */}
+				<button id="our_story" onClick={routeToAboutCafePage}>Our Story</button>				
+				<button id="contact_us" onClick={routeToAboutContactUs}>Contact US</button>
 			</div>
 		</div>
 	)

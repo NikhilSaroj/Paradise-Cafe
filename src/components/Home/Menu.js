@@ -9,6 +9,7 @@ import CakesAndDesert from './CakesAndDesert'
 import CoffeAndBeverages from './CoffeAndBeverages'
 import Footer from './Footer'
 import FoodItems from './FoodItems'
+import Header from './Header'
 
 function Menu(props) {
 
@@ -60,39 +61,13 @@ function Menu(props) {
       
     }
 
-    const itemsList = items.map((items) => <h1 id="h1-list" key={items.id}><button className="list-buttons" id={items.id} onClick={buttonOnClicked}>{items.itemName}</button></h1>); 
+    const itemsList = items.map((items) => <h1 id="h1-list" key={items.id}>
+        <button className="list-buttons" id={items.id} onClick={buttonOnClicked}>{items.itemName}</button></h1>); 
 
-    let history = useHistory();
-    const routeToMenuPage = () => {
-		// console.log('heelo')
-		history.push("/menu");
-	}
-
-    const routeToAboutCafePage = () => {
-		// console.log('heelo')
-		history.push("/AboutCafe");
-	}
-
-    const routeToHomePage = () => {
-		// console.log('heelo')
-		history.push("/");
-	}
-
+    
             return (
             <div className="menu">
-                {/* <Header ourStory={this.ourStory}/> */}
-                <div className="header">
-                    <button className="cafe-logo" onClick={routeToHomePage} />
-                    <button id="login">Cart</button>
-                    <button id="signUp">Login/SignUp</button>
-                    <p className="header">Welcome to paradise cafe</p>
-                    <div className="opt-buttons">
-                        <button id="our_menu" onClick={routeToMenuPage}>Our Menu</button>
-                        <button id="our_story" onClick={routeToAboutCafePage}>Our Story</button>
-                        <button id="contact_us">Contact US</button>
-                    </div>
-                </div>
-
+                <Header/>
                 <div className="container">
                         <div className="menu-list">
                             {itemsList}
